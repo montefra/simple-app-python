@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    response = make_response("Hello Tekton from Python!\n", 200)
+    response = make_response("Hello Tekton from Python!\n~~~~", 200)
     response.mimetype = "text/plain"
     return response
 
